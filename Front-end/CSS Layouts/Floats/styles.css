@@ -1,0 +1,143 @@
+/* Reset básico para todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configurações de corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Estilo do cabeçalho */
+.header {
+    background-color: #0077cc;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 2rem;
+}
+
+.navigation {
+    margin-top: 10px;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo principal de conteúdo */
+.main .container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* Seção de Destaque */
+.highlight {
+    margin-bottom: 2rem;
+}
+
+.highlight h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    /* Float para que o título não ocupe o espaço da próxima seção */
+    float: left;
+}
+
+.news-highlight {
+    background: white;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    clear: both; /* Limpa o float após o destaque */
+}
+
+.news-highlight img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.news-highlight h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.news-highlight p {
+    color: #555;
+}
+
+/* Estilo da seção de notícias */
+.news-grid h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    /* Usando float para o título */
+    float: left;
+}
+
+.news-cards {
+    margin-top: 20px;
+    clear: both; /* Limpa o float da seção anterior */
+}
+
+.news-card {
+    float: left; /* Float para criar colunas de notícias */
+    width: calc(33.333% - 1rem); /* Define 3 colunas, com espaçamento entre elas */
+    background: white;
+    padding: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.news-card:hover {
+    transform: scale(1.02);
+}
+
+.news-card img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.news-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.news-card p {
+    color: #555;
+}
+
+/* Clearfix para limpar float e manter o rodapé no final */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Estilo do rodapé */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    clear: both; /* Garante que o rodapé fique após o conteúdo flutuante */
+}
